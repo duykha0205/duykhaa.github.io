@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+    <script>
+      // GitHub Pages 404 redirect for client-side routing
+      // This script redirects 404 requests to the root index.html 
+      // while preserving the path for React Router to handle
+      const path = window.location.pathname.slice(1);
+      const query = window.location.search;
+      const hash = window.location.hash;
+      
+      // Store the path in sessionStorage for the main app to pick up
+      if (path) {
+        sessionStorage.setItem('redirectPath', '/' + path + query + hash);
+      }
+      
+      // Redirect to the root
+      window.location.replace('/duykhaa.github.io/');
+    </script>
+  </head>
+  <body>
+    <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+      <h2>Redirecting...</h2>
+      <p>You will be automatically redirected to the main page.</p>
+    </div>
+  </body>
+</html>
