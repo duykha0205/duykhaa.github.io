@@ -40,7 +40,7 @@ export const Header = () => {
             <Button 
               size="lg" 
               className="bg-cv-brown hover:bg-cv-brown/90 text-cv-white"
-              onClick={() => window.open('/platform.pdf', '_blank')}
+              onClick={() => window.open(`${import.meta.env.BASE_URL}platform.pdf`, '_blank')}
             >
               Download Resume
             </Button>

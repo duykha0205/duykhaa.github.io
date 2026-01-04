@@ -71,7 +71,11 @@ export const Navigation = () => {
             ))}
           </div>
           
-          <Button variant="default" className="bg-cv-brown hover:bg-cv-brown/90 text-cv-white">
+          <Button 
+            variant="default" 
+            className="bg-cv-brown hover:bg-cv-brown/90 text-cv-white"
+            onClick={() => window.open(`${import.meta.env.BASE_URL}platform.pdf`, '_blank')}
+          >
             Download CV
           </Button>
         </div>
