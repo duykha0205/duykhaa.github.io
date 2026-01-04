@@ -17,7 +17,7 @@ export const Header = () => {
             Le Duy Kha
           </h1>
           <h2 className="text-2xl md:text-3xl text-cv-grey-dark mb-6">
-            Data Engineer | AI Platform Engineer
+            Data & AI Platform Engineer
           </h2>
           
           {/* Location */}
@@ -40,7 +40,7 @@ export const Header = () => {
             <Button 
               size="lg" 
               className="bg-cv-brown hover:bg-cv-brown/90 text-cv-white"
-              onClick={() => window.open('/resume.pdf', '_blank')}
+              onClick={() => window.open('/platform.pdf', '_blank')}
             >
               Download Resume
             </Button>
@@ -57,7 +57,7 @@ export const Header = () => {
           {/* Social Links */}
           <div className="flex justify-center gap-6">
             <a 
-              href="https://github.com/leduykhoa" 
+              href="https://github.com/duykha0205" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-cv-grey hover:text-cv-brown transition-colors p-2 rounded-full hover:bg-cv-yellow-soft"

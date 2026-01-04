@@ -7,9 +7,9 @@ const skillCategories = [
     title: "Programming",
     skills: [
       { name: "Python", level: 95 },
-      { name: "Rust", level: 80 },
+      { name: "TypeScript", level: 80 },
       { name: "Golang", level: 75 },
-      { name: "C++", level: 85 },
+      { name: "Rust", level: 70 },
     ],
   },
   {
@@ -32,8 +32,8 @@ const skillCategories = [
   },
 ];
 
-const databases = ["PostgreSQL", "TimescaleDB", "MySQL", "MongoDB", "Redis", "MinIO"];
-const frameworks = ["FastAPI", "TensorFlow", "PyTorch", "LangChain", "Selenium", "Transformers"];
+const databases = ["PostgreSQL", "TimescaleDB", "MySQL", "MongoDB", "Redis", "MinIO", "Iceberg"];
+const frameworks = ["FastAPI", "PySpark", "PyTorch", "LangChain", "Selenium", "React"];
 const tools = ["Git", "Docker", "Kubernetes", "Grafana", "VS Code", "Postman"];
 
 export const Skills = () => {

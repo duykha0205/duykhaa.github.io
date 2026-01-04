@@ -15,14 +15,14 @@ const projects = [
     type: "Professional"
   },
   {
-    title: "Reddit Data Pipeline Platform",
-    description: "Automated data pipeline using Kubernetes, Helm, and Docker to deploy Airflow jobs. Retrieves API data, uploads to S3, triggers Lambda functions for Glue jobs, with monitoring via CloudWatch.",
-    image: "/placeholder.svg",
-    technologies: ["Airflow", "Kubernetes", "AWS Lambda", "AWS Glue", "Redshift"],
+    title: "Xbot - Multi-Agent System for Operations",
+    description: "Designed multi-agent architecture with LangChain, implementing intelligent routing mechanisms and sub-agent orchestration. Integrated Qdrant vector database for knowledge retrieval with optimized collection architecture.",
+    image: "/Xbot/xbot_ui.png",
+    technologies: ["LangChain", "Qdrant", "AWS ECS", "Terraform", "Flowise", "Langfuse"],
     liveUrl: "#",
     githubUrl: "#",
     featured: true,
-    type: "Personal"
+    type: "Professional"
   },
   {
     title: "EOD - Enterprise Streaming Platform",
@@ -176,7 +176,7 @@ export const Portfolio = () => {
           <Button 
             variant="outline" 
             className="border-cv-brown text-cv-brown hover:bg-cv-brown hover:text-cv-white"
-            onClick={() => window.open('https://github.com/leduykhoa', '_blank')}
+            onClick={() => window.open('https://github.com/duykha0205', '_blank')}
           >
             View All Projects on GitHub
           </Button>

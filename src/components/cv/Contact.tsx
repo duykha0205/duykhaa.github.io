@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Send, Globe } from "lucide-react";
 
 export const Contact = () => {
   return (
@@ -40,11 +40,11 @@ export const Contact = () => {
               
               <div className="flex items-center gap-3">
                 <div className="p-3 bg-cv-yellow-soft rounded-lg">
-                  <Phone className="w-5 h-5 text-cv-brown" />
+                  <Globe className="w-5 h-5 text-cv-brown" />
                 </div>
                 <div>
-                  <p className="text-cv-grey text-sm">Phone</p>
-                  <p className="text-cv-grey-dark font-medium">0922254027</p>
+                  <p className="text-cv-grey text-sm">Website</p>
+                  <a href="http://kha.nichedatainsight.com/" target="_blank" rel="noopener noreferrer" className="text-cv-grey-dark font-medium hover:text-cv-yellow">kha.nichedatainsight.com</a>
                 </div>
               </div>
               
