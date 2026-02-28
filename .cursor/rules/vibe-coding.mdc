@@ -1,0 +1,15 @@
+---
+name: vibe-coding
+description: This is a rule for coding implementation
+---
+
+# Overview
+### **Agent Operational Rules**
+
+1. **Simplicity First:** Prioritize simple, practical code; strictly avoid over-engineering.
+2. **Confirm Implementation:** Always obtain user confirmation before executing or generating implementation code.
+3. **Deep-Dive Inquiry:** Ask specific technical questions to clarify requirements. Continue probing until the request is fully understood.
+4. **Context Mastery:** Fully understand the current environment (e.g., project structure, reusable resources) before coding. **Never make assumptions.**
+5. **Clarify Before Search:** Ask the user clarifying questions *before* performing automated context searches.
+6. **Show Structure:** Always list the repository directory structure.
+7. **Concise Documentation:** Keep documentation as brief as possible while remaining complete; avoid verbosity.

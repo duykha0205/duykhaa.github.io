@@ -79,24 +79,40 @@ const experiences = [
   },
 ];
 
-const freelanceExperience = {
-  title: "Platform Engineer",
-  company: "Mernva Technologies",
-  period: "Jul 2023 - Nov 2024",
-  location: "Remote - India",
-  description: "Integrated AI-driven data processing models and pipelines into backend systems, collaborating remotely with international teams to enhance data engineering processes.",
-  technologies: ["AWS Cloud", "EC2", "K8s", "Python", "FastAPI", "Docker", "Kubernetes", "LangChain", "Hugging Face"],
-  projects: [
-    {
-      name: "AI Model Integration",
-      description: "Seamlessly incorporated AI-driven models into backend systems for intelligent data transformations"
-    },
-    {
-      name: "Chat Bot Document Summary",
-      description: "R&D on chatbot using RAG and APIs for efficient data retrieval and summary generation"
-    }
-  ]
-};
+const freelanceExperiences = [
+  {
+    title: "Full-stack Engineer",
+    company: "Nextlab Company",
+    period: "Feb 2026",
+    location: "POC Project",
+    description: "Delivered a full-stack Proof of Concept (POC) in ~15 hours. Clarified BRD, designed solution architecture (LakeHouse Bronze/Silver/Gold, 4-level audit framework), and authored technical specs + API contracts.",
+    technologies: ["Python", "FastAPI", "Next.js", "TypeScript", "Google Gemini 2.0 Flash", "Terraform", "Cloud Run", "Docker"],
+    projects: [
+      {
+        name: "AI-Powered HR Document Audit Tool",
+        description: "Built AI pipeline (Gemini 2.0 Flash) for classifying 32 document types, quality checks, and OCR extraction. Developed 3-level audit engine, Next.js dashboard, and Excel reports."
+      }
+    ]
+  },
+  {
+    title: "Platform Engineer",
+    company: "Mernva Technologies",
+    period: "Jul 2023 - Nov 2024",
+    location: "Remote - India",
+    description: "Integrated AI-driven data processing models and pipelines into backend systems, collaborating remotely with international teams to enhance data engineering processes.",
+    technologies: ["AWS Cloud", "EC2", "K8s", "Python", "FastAPI", "Docker", "Kubernetes", "LangChain", "Hugging Face"],
+    projects: [
+      {
+        name: "AI Model Integration",
+        description: "Seamlessly incorporated AI-driven models into backend systems for intelligent data transformations"
+      },
+      {
+        name: "Chat Bot Document Summary",
+        description: "R&D on chatbot using RAG and APIs for efficient data retrieval and summary generation"
+      }
+    ]
+  },
+];
 
 export const Experience = () => {
   return (
@@ -166,51 +182,57 @@ export const Experience = () => {
           </span>
         </h2>
         
-        <Card className="bg-cv-white shadow-lg border-cv-silver hover:shadow-xl transition-shadow">
-          <CardHeader>
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-              <div>
-                <CardTitle className="text-xl text-cv-brown">{freelanceExperience.title}</CardTitle>
-                <p className="text-lg text-cv-grey-dark font-medium">{freelanceExperience.company}</p>
-              </div>
-              <div className="flex flex-col md:items-end gap-1">
-                <div className="flex items-center gap-1 text-cv-grey">
-                  <Calendar className="w-4 h-4" />
-                  <span className="text-sm">{freelanceExperience.period}</span>
-                </div>
-                <div className="flex items-center gap-1 text-cv-grey">
-                  <MapPin className="w-4 h-4" />
-                  <span className="text-sm">{freelanceExperience.location}</span>
-                </div>
-              </div>
-            </div>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <p className="text-cv-grey-dark leading-relaxed">
-              {freelanceExperience.description}
-            </p>
-            
-            <div>
-              <h4 className="font-semibold text-cv-brown mb-2">Key Projects:</h4>
-              <div className="space-y-2">
-                {freelanceExperience.projects.map((project, idx) => (
-                  <div key={idx} className="pl-4 border-l-2 border-cv-yellow">
-                    <p className="font-medium text-cv-brown text-sm">{project.name}</p>
-                    <p className="text-cv-grey-dark text-sm">{project.description}</p>
+        <div className="space-y-6">
+          {freelanceExperiences.map((exp, index) => (
+            <Card key={index} className="bg-cv-white shadow-lg border-cv-silver hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                  <div>
+                    <CardTitle className="text-xl text-cv-brown">{exp.title}</CardTitle>
+                    <p className="text-lg text-cv-grey-dark font-medium">{exp.company}</p>
                   </div>
-                ))}
-              </div>
-            </div>
-            
-            <div className="flex flex-wrap gap-2">
-              {freelanceExperience.technologies.map((tech) => (
-                <Badge key={tech} variant="secondary" className="bg-cv-yellow-soft text-cv-brown">
-                  {tech}
-                </Badge>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
+                  <div className="flex flex-col md:items-end gap-1">
+                    <div className="flex items-center gap-1 text-cv-grey">
+                      <Calendar className="w-4 h-4" />
+                      <span className="text-sm">{exp.period}</span>
+                    </div>
+                    <div className="flex items-center gap-1 text-cv-grey">
+                      <MapPin className="w-4 h-4" />
+                      <span className="text-sm">{exp.location}</span>
+                    </div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-cv-grey-dark leading-relaxed">
+                  {exp.description}
+                </p>
+
+                {exp.projects && (
+                  <div>
+                    <h4 className="font-semibold text-cv-brown mb-2">Key Projects:</h4>
+                    <div className="space-y-2">
+                      {exp.projects.map((project, idx) => (
+                        <div key={idx} className="pl-4 border-l-2 border-cv-yellow">
+                          <p className="font-medium text-cv-brown text-sm">{project.name}</p>
+                          <p className="text-cv-grey-dark text-sm">{project.description}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                <div className="flex flex-wrap gap-2">
+                  {exp.technologies.map((tech) => (
+                    <Badge key={tech} variant="secondary" className="bg-cv-yellow-soft text-cv-brown">
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </div>
     </div>
   );

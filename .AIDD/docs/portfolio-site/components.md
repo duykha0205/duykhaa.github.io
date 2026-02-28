@@ -58,7 +58,7 @@ Sticky nav bar cố định trên đầu trang. Tự điều chỉnh appearance 
 - `isScrolled = true`: nav có background trắng mờ + shadow + border
 - Scroll listener detect section active bằng cách check `getBoundingClientRect()` — section nào có `top <= 100 && bottom >= 100` thì active
 - Click nav item → `scrollIntoView({ behavior: 'smooth' })`
-- "Download CV" button → mở `platform.pdf` trong tab mới
+- "Download CV" button → mở `fullstack.pdf` trong tab mới
 
 ### Nav items
 
@@ -83,7 +83,7 @@ Hero section full-height. Hiển thị avatar placeholder, tên, chức danh, lo
 | Field | Giá trị |
 |-------|---------|
 | Name | Le Duy Kha |
-| Title | Data & AI Platform Engineer |
+| Title | Full-stack Engineer |
 | Location | Ho Chi Minh City, Vietnam |
 | Avatar | Text placeholder "LDK" (chưa có ảnh thật) |
 | Skill tags | Python, Kafka, AWS, Kubernetes, LLM, FastAPI |
@@ -138,7 +138,7 @@ Section tóm tắt giới thiệu bản thân. Gồm một đoạn text mô tả
 
 ### Mô tả
 
-Hiển thị lịch sử làm việc dưới dạng danh sách cards. Chia 2 nhóm: **Work Experience** (3 vị trí) và **Freelance Experience** (1 vị trí).
+Hiển thị lịch sử làm việc dưới dạng danh sách cards. Chia 2 nhóm: **Work Experience** (3 vị trí) và **Freelance Experience** (2 vị trí).
 
 ### Data structure
 
@@ -239,10 +239,11 @@ type Education = {
 | B.Sc Computer Science | VNUHCM – University of Science | 8.4/10 |
 | High School | Luong The Vinh High School for the Gifted | Graduated |
 
-### Certifications (4 items)
+### Certifications (5 items)
 
 | Tên | Issued by | Năm |
 |-----|-----------|-----|
+| AWS Certified Solutions Architect – Associate | AWS | 2025 |
 | Top 2 MedTech – HackYouth 2023 | Vin Uni | 2023 |
 | Machine Learning in Production | Coursera | 2022 |
 | SAT Math Level 2 (800/800) | SAT Exam | 2021 |

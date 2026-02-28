@@ -2,7 +2,7 @@
 
 ## Summary
 
-Personal portfolio/CV website của **Le Duy Kha** — Data & AI Platform Engineer. Đây là một Single Page Application (SPA) trình bày thông tin cá nhân, kinh nghiệm làm việc, kỹ năng, dự án và contact. Deploy tự động lên GitHub Pages qua nhánh `gh-pages`.
+Personal portfolio/CV website của **Le Duy Kha** — Full-stack Engineer. Đây là một Single Page Application (SPA) trình bày thông tin cá nhân, kinh nghiệm làm việc, kỹ năng, dự án và contact. Deploy tự động lên GitHub Pages qua nhánh `gh-pages`.
 
 ---
 
@@ -31,7 +31,7 @@ Navigation bar cố định trên đầu trang. Khi scroll, nav tự highlight s
 
 ### Download CV
 
-Click "Download CV" (nav) hoặc "Download Resume" (hero) → mở file `platform.pdf` trong tab mới.
+Click "Download CV" (nav) hoặc "Download Resume" (hero) → mở file `fullstack.pdf` trong tab mới.
 
 ### Xem portfolio
 

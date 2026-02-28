@@ -23,6 +23,12 @@ const education = [
 
 const certifications = [
   {
+    name: "AWS Certified Solutions Architect – Associate",
+    issuer: "AWS",
+    year: "2025",
+    icon: <Award className="w-5 h-5" />,
+  },
+  {
     name: "Top 2 in MedTech domain, HackYouth 2023",
     issuer: "Vin Uni",
     year: "2023",

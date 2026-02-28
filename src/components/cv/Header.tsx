@@ -17,7 +17,7 @@ export const Header = () => {
             Le Duy Kha
           </h1>
           <h2 className="text-2xl md:text-3xl text-cv-grey-dark mb-6">
-            Data & AI Platform Engineer
+            Full-stack Engineer
           </h2>
           
           {/* Location */}
@@ -40,7 +40,7 @@ export const Header = () => {
             <Button 
               size="lg" 
               className="bg-cv-brown hover:bg-cv-brown/90 text-cv-white"
-              onClick={() => window.open(`${import.meta.env.BASE_URL}platform.pdf`, '_blank')}
+              onClick={() => window.open(`${import.meta.env.BASE_URL}fullstack.pdf`, '_blank')}
             >
               Download Resume
             </Button>

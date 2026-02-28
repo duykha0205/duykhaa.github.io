@@ -35,7 +35,7 @@ duykhaa.github.io/
 ├── eslint.config.js             # ESLint (react-hooks, react-refresh)
 │
 ├── public/
-│   ├── platform.pdf             # File CV để download
+│   ├── fullstack.pdf            # File CV để download
 │   ├── favicon.ico
 │   ├── robots.txt
 │   ├── placeholder.svg          # Placeholder cho portfolio images
@@ -160,7 +160,7 @@ Vì `base` thay đổi giữa dev/prod, tất cả asset dùng `import.meta.env.
 
 ```typescript
 // Platform PDF
-window.open(`${import.meta.env.BASE_URL}platform.pdf`, '_blank')
+window.open(`${import.meta.env.BASE_URL}fullstack.pdf`, '_blank')
 
 // Portfolio images
 src={`${import.meta.env.BASE_URL}${project.image.startsWith('/') ? project.image.slice(1) : project.image}`}

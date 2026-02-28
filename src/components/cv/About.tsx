@@ -18,9 +18,10 @@ export const About = () => {
         
         {/* Main Description */}
         <p className="text-lg text-cv-grey-dark leading-relaxed text-center max-w-3xl mx-auto mb-10">
-          Platform Engineer with nearly 4 years of experience building scalable data and AI cloud 
-          infrastructure. Aspiring Solution Architect focused on data platform architecture, 
-          DevOps automation, and AI system integration.
+          Full-stack Engineer with 4 years of experience building end-to-end AI and data applications.
+          Expertise spans full-stack development, data pipeline architecture, DevOps automation, and
+          AI system integration. Aspiring Solution Architect focused on delivering innovative
+          AI-driven products and data-intensive applications.
         </p>
         
         {/* Stats Grid */}
